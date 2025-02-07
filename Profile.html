@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Developer Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="text-center py-10">
+        <div class="imagecontainer">
+            <img src="image.jpg" alt="Avatar" class="avatar"
+                style="margin: 24px 0 12px 0; width: 220px; height: 220px; border-radius: 50%; 
+                    display: block; margin-left: auto; margin-right: auto; "
+            >
+        </div>
+        <h1 class="text-4xl font-bold">Nadishwara Gimhana</h1>
+        <p class="text-lg text-gray-400">Full Stack Developer | JavaScript | React | Node.js</p>
+    </header>
+    
+    <section class="max-w-4xl mx-auto p-6 bg-gray-800 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+        <p class="text-gray-300">I am a passionate full-stack developer with experience in building scalable web applications. I specialize in JavaScript, React, Node.js, and database management.</p>
+    </section>
+    
+    <section class="max-w-4xl mx-auto mt-6 p-6 bg-gray-800 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+        <div class="grid grid-cols-3 gap-4 text-center">
+            <span class="bg-gray-700 py-2 px-4 rounded-lg">HTML</span>
+            <span class="bg-gray-700 py-2 px-4 rounded-lg">CSS</span>
+            <span class="bg-gray-700 py-2 px-4 rounded-lg">JavaScript</span>
+            <span class="bg-gray-700 py-2 px-4 rounded-lg">React</span>
+            <span class="bg-gray-700 py-2 px-4 rounded-lg">Node.js</span>
+            <span class="bg-gray-700 py-2 px-4 rounded-lg">MySQL</span>
+        </div>
+    </section>
+    
+    <section class="max-w-4xl mx-auto mt-6 p-6 bg-gray-800 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+        <ul class="space-y-3">
+            <li class="bg-gray-700 p-4 rounded-lg">Project 1 - <span class="text-gray-300">E-commerce Website</span></li>
+            <li class="bg-gray-700 p-4 rounded-lg">Project 2 - <span class="text-gray-300">Portfolio Website</span></li>
+            <li class="bg-gray-700 p-4 rounded-lg">Project 3 - <span class="text-gray-300">Task Management App</span></li>
+        </ul>
+    </section>
+    
+    <section class="max-w-4xl mx-auto mt-6 p-6 bg-gray-800 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+        <p>Email: nadishwaragimhana@gmail.com</p>
+        <div class="mt-4 flex space-x-4">
+            <a href="https://github.com/nadishwara" class="text-gray-400 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/iduranga-nadishwara-87a5a8231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-2xl"></i></a>
+            <a href="https://x.com/a_gimhana96651" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-2xl"></i></a>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".bg-gray-700").forEach(el => {
+                el.addEventListener("mouseover", () => el.classList.add("scale-105"));
+                el.addEventListener("mouseleave", () => el.classList.remove("scale-105"));
+            });
+        });
+    </script>
+</body>
+</html>
